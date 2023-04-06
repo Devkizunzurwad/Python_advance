@@ -1,0 +1,28 @@
+Q1. Describe three applications for exception processing.
+
+Error handling: Exceptions can be used to gracefully handle errors that may occur during program execution, such as file I/O errors or network connection errors.
+
+Debugging: Exceptions can be used to identify and locate errors in code that may not be immediately obvious, by providing information about the context in which the error occurred.
+
+Program flow control: Exceptions can be used to modify the flow of a program based on certain conditions, such as catching a specific exception and executing different code based on the type of exception.
+
+Q2. What happens if you don&#39;t do something extra to treat an exception?
+
+If an exception is not handled, the program will terminate and an error message will be displayed, providing information about the type of exception and the location in the code where it occurred.
+
+Q3. What are your options for recovering from an exception in your script?
+
+Retry: If the exception was caused by a temporary issue, such as a network timeout, it may be possible to retry the operation that caused the exception.
+Graceful degradation: If the exception is not critical to the program's operation, it may be possible to continue execution with reduced functionality or with a fallback method.
+Log and alert: If the exception is not recoverable, it may be logged and an alert sent to a developer or administrator to investigate the issue.
+
+Q4. Describe two methods for triggering exceptions in your script.
+
+raise statement: This can be used to raise a specific exception manually, such as raise ValueError("Invalid input").
+assert statement: This can be used to raise an AssertionError if a condition is not met, such as assert x > 0, "x must be greater than 0".
+
+Q5. Identify two methods for specifying actions to be executed at termination time, regardless of
+whether or not an exception exists.
+
+finally block: This can be used to specify code that should be executed regardless of whether an exception occurred or not, such as closing a file or database connection.
+atexit module: This can be used to register functions that should be called when the program is about to exit, such as cleaning up temporary files or sending a notification.
