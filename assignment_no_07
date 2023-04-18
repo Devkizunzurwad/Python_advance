@@ -1,0 +1,17 @@
+Q1. What is the purpose of the try statement?
+The try statement is used in Python to handle exceptions. It allows you to write code that might raise an exception in a way that lets you handle the exception gracefully and continue execution of the program.
+
+Q2. What are the two most popular try statement variations?
+The two most popular try statement variations in Python are:
+
+try/except: This variation allows you to specify the type of exception that you want to catch and handle. If the specified exception is raised in the try block, the except block is executed.
+try/finally: This variation allows you to specify a block of code that will be executed regardless of whether an exception is raised in the try block or not. The finally block is typically used to clean up resources or perform other necessary tasks that should always be executed.
+
+Q3. What is the purpose of the raise statement?
+The raise statement is used in Python to raise an exception. It allows you to generate an exception manually and specify the type of exception that should be raised, along with an optional error message.
+
+Q4. What does the assert statement do, and what other statement is it like?
+The assert statement is used in Python to check a condition and raise an AssertionError if the condition is not met. It is similar to the if statement, but it is used to check for conditions that should never occur during the normal operation of a program. If an AssertionError is raised by an assert statement, it indicates that there is a bug or error in the program.
+
+Q5. What is the purpose of the with/as argument, and what other statement is it like?
+The with/as statement is used in Python to simplify the management of resources that need to be acquired and released in a specific order. It is typically used to open and close files, acquire and release locks, or connect and disconnect from databases. The with/as statement is similar to the try/finally statement, but it is more concise and easier to read.

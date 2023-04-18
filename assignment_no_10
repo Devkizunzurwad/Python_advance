@@ -1,0 +1,33 @@
+Q1. What is the difference between __getattr__ and __getattribute__?
+
+__getattr__ and __getattribute__ are both methods used in Python classes to customize attribute access. The main difference between them is the timing of their invocation.
+
+__getattr__ is only called when an attribute is not found using the normal lookup process.
+__getattr__ is only used as a fallback when an attribute is missing.
+
+__getattribute__ is called for every attribute access, regardless of whether the attribute exists or not. 
+__getattribute__ can be used to intercept and modify all attribute access.
+
+Q2. What is the difference between properties and descriptors?
+
+Properties and descriptors are both ways of customizing attribute access in Python classes.
+
+Properties are a simpler mechanism that allows you to define getters, setters, and deleters for class attributes.
+They are accessed using dot notation and can be used to make class attributes behave like instance variables.
+
+Descriptors are a more powerful mechanism that allow you to define custom attribute access behavior for an entire class or group of classes. Descriptors are objects that define the methods __get__, __set__, and/or __delete__, which are called when an attribute is accessed, assigned to, or deleted, respectively. Descriptors are typically defined as class-level attributes and are accessed using dot notation.
+
+
+Q3. What are the key differences in functionality between __getattr__ and __getattribute__, as well as
+properties and descriptors?
+
+The key differences between __getattr__ and __getattribute__ are that __getattr__ is only called when an attribute is not found using the normal lookup process, while __getattribute__ is called for every attribute access, and that __getattribute__ can be used to intercept and modify all attribute access, while __getattr__ is only used as a fallback when an attribute is missing.
+
+The key differences between properties and descriptors are that properties are a simpler mechanism for customizing attribute access and are accessed using dot notation, while descriptors are a more powerful mechanism that allow you to define custom attribute access behavior for an entire class or group of classes and are accessed using dot notation as well.
+
+In terms of functionality, __getattribute__ and descriptors are both more powerful than __getattr__ and properties because they can intercept all attribute access and modify it as necessary. However, this power comes at the cost of increased complexity and potential for errors. __getattr__ and properties are simpler and easier to use, but are more limited in their functionality.
+
+
+
+
+
