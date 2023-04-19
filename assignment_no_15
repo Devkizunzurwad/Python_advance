@@ -1,0 +1,23 @@
+1. What are the new features added in Python 3.8 version?
+Python 3.8 introduced several new features and improvements, including:
+The walrus operator (:=)
+Positional-only parameters in functions
+f-strings now support the = specifier for easier debugging
+Simpler and more flexible customization of class creation through the init_subclass method
+Performance improvements in dictionary lookups, string concatenation, and more
+Debug information for f-strings and dictionary literals
+New syntax warnings for unreachable code and comparisons to singletons
+
+2. What is monkey patching in Python?
+Monkey patching in Python is the process of dynamically modifying the behavior of a module, class, or object at runtime by replacing some or all of its attributes or methods with new ones. This is done by directly manipulating the object's attributes and methods. While monkey patching can be useful in some situations, it can also be dangerous and make the code harder to understand and maintain.
+
+3. What is the difference between a shallow copy and deep copy?
+In Python, a shallow copy of an object creates a new object that shares the same memory as the original object for its top-level elements. However, any nested objects within the original object are not copied, but instead are just referenced by the new object. In contrast, a deep copy of an object creates a completely new object with its own memory, including all nested objects within the original object.
+
+4. What is the maximum possible length of an identifier?
+The maximum length of an identifier in Python is implementation-dependent and varies across different versions and implementations of Python. In general, identifiers can be any length, but for practical purposes, it is recommended to keep them to a reasonable length for readability and maintainability.
+
+5. What is generator comprehension?
+A generator comprehension in Python is a concise way to create a generator object, which is a type of iterator that generates values on the fly. It is similar to a list comprehension, but instead of creating a list, it creates a generator object that can be used to iterate over the generated values one at a time. The syntax for a generator comprehension is similar to a list comprehension, but uses parentheses instead of square brackets. For ex-
+
+my_gen = (x**2 for x in range(10))
